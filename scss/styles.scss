@@ -1,4 +1,16 @@
 // Components | Variables
 @import "../scss/utilities/variables";
+// NavBar - Index.html
+@import "../scss/components/navbar";
 // Main - Index.html
 @import "../scss/layout/main";
+// Section - Index.html
+@import "../scss/layout/section";
+// Articles - Index.html
+@import "../scss/layout/articles";
+// forms - Turnos
+@import "../scss/components/form";
+// carrusel - Tienda
+@import "../scss/components/carrusel";
+// Media Queries - Index.html
+@import "../scss/views/queries"

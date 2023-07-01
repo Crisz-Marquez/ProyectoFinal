@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+    // main
+    .main {
+        margin: 40px;
+
+        &__content {
+            
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    // Section
+    .main__content-section {
+        margin: 0px;
+    }
+    // Article
+    .main__article-sabias {
+        
+        .main__content-sabias
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1050px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
