@@ -1,12 +1,34 @@
 @media screen and (min-width: 768px) {
-    // main
-    .main {
-        margin: 40px;
+   
+// INICIO | INDEX.HTML
+
+    // NavBar | Index.html
+    .header {
+
+        .nav__container {
+            margin: 0px;
+            padding: 10px 60px;
+    
+            .navbar {
+
+                .container-fluid {
+
+                    .navbar-brand {
+                        font-size: 1.50rem;
+                    }
+                }
+            }
+        }
+    }
+   
+    // Main | Index.html
+    .main  {
+        margin: 20px 50px;
 
         &__content {
             
             h1 {
-                font-size: 3rem;
+                font-size: 2.5rem
             }
 
             h2 {
@@ -14,30 +36,152 @@
             }
         }
     }
-    // Section
-    .main__content-section {
-        margin: 0px;
+
+    // Sections | Index.html
+    .main__section-AboutUs, .main__section-reliable, .main__section-inquiries{
+        margin: 20px 50px;
+    
+        .main__content-AboutUs, .main__content-reliable, .main__content-inquiries {
+
+            p {
+                font-size: 1.4rem;
+                padding: 25px 45px;
+                text-align: justify;
+                margin: 0px;
+                }
+        }
     }
-    // Article
+
+    // Articles | Index.html
     .main__article-sabias {
-        
-        .main__content-sabias
-        h4 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1.7rem;
+        background-image: linear-gradient(to bottom, #004974, #00476b, #00466e);
+        color: rgb(255, 255, 255);
+        font-family: 'Jost', sans-serif;
+        padding: 20px;
+        margin: 20px 50px;
+        border-radius: 20px;
+ 
+    
+        .main__content-sabias{
+    
+            p {
+                font-size: 1.4rem;
+                font-weight: 300;
+                padding: 25px 45px;
+                margin-bottom: 0px;
+                text-align: justify;
+            }
         }
     }
+    
+// FIN | INDEX.HTML
+
+    // <--------- * ----------> //
+
+// INICIO | TURNOS.HTML
+
+
+    // Main | Turnos.html
+    .main-turnos {
+        margin: 20px 50px;
+        height: 60vh;
+    
+        &__img {
+            height: 60vh;
+        }
+
+        &__content {
+            
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                padding: 25px 50px;
+                margin-bottom: 0px;
+                text-align: justify;
+            }
+        }
+    }
+
+    // Forms | Turnos.html
+    .section__form {
+        margin: 0px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        .container-fluid {
+            margin: 0px;
+
+            .form__person {
+                width: 100%;
+                padding: 30px 80px 50px 80px;
+                margin-top: 30px;
+            }
+
+            .form__product {
+                width: 100%;
+                padding: 30px 80px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+// FIN | TURNOS.HTML
+
 }
 
+// INICIO | RECLAMOS.HTML
 
+    // Main | Reclamos.html
+    .main-reclamos {
+        margin: 20px 50px;
+        height: 60vh;
+    
+        &__img {
+            height: 60vh;
+        }
 
-@media screen and (min-width: 1050px) {
+        &__content {
+            
+            h1 {
+                font-size: 2.8rem;
+            }
 
-}
+            h2 {
+                font-size: 1.5rem;
+                padding: 25px 50px;
+                margin-bottom: 0px;
+                text-align: justify;
+            }
+        }
+    }
 
-@media screen and (min-width: 1200px) {
+    .section__form {
+        margin: 0px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        .container-fluid {
+            margin: 0px;
 
-}
+            .form__person {
+                width: 100%;
+                padding: 30px 80px 50px 80px;
+                margin-top: 30px;
+            }
+
+            .form__product {
+                width: 100%;
+                padding: 30px 80px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
