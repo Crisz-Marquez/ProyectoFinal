@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
    
-// INICIO | INDEX.HTML
+    // INICIO | INDEX.HTML
 
     // NavBar | Index.html
     .header {
@@ -60,8 +60,7 @@
         padding: 20px;
         margin: 20px 50px;
         border-radius: 20px;
- 
-    
+
         .main__content-sabias{
     
             p {
@@ -74,26 +73,28 @@
         }
     }
     
-// FIN | INDEX.HTML
+    // FIN | INDEX.HTML
+
 
     // <--------- * ----------> //
 
-// INICIO | TURNOS.HTML
 
+    // INICIO | TURNOS.HTML
 
     // Main | Turnos.html
     .main-turnos {
         margin: 20px 50px;
-        height: 60vh;
+        height: 70vh;
     
         &__img {
-            height: 60vh;
+            height: 70vh;
         }
 
         &__content {
             
             h1 {
                 font-size: 2.8rem;
+                text-shadow: 0px 0px 5px black;
             }
 
             h2 {
@@ -105,37 +106,14 @@
         }
     }
 
-    // Forms | Turnos.html
-    .section__form {
-        margin: 0px 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    // FIN | TURNOS.HTML
+
+
+    // <--------- * ----------> //
     
-        .container-fluid {
-            margin: 0px;
 
-            .form__person {
-                width: 100%;
-                padding: 30px 80px 50px 80px;
-                margin-top: 30px;
-            }
+    // INICIO | RECLAMOS.HTML
 
-            .form__product {
-                width: 100%;
-                padding: 30px 80px;
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-        }
-    }
-    
-// FIN | TURNOS.HTML
-
-}
-
-// INICIO | RECLAMOS.HTML
 
     // Main | Reclamos.html
     .main-reclamos {
@@ -150,31 +128,33 @@
             
             h1 {
                 font-size: 2.8rem;
+                text-shadow: 0px 0px 5px black;
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: min(5.8vw, 1.5rem);
                 padding: 25px 50px;
                 margin-bottom: 0px;
                 text-align: justify;
+                font-weight: 300;
+                color: rgb(255, 255, 255);
+                text-shadow: 0px 0px 10px rgb(0, 0, 0);
             }
         }
     }
 
+    //  Form | Reclamos.html
     .section__form {
-        margin: 0px 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    
+        margin: 0px;
+        padding: 0px 40px;
+
         .container-fluid {
             margin: 0px;
 
             .form__person {
                 width: 100%;
                 padding: 30px 80px 50px 80px;
-                margin-top: 30px;
+                margin-top: 10px;
             }
 
             .form__product {
@@ -185,3 +165,69 @@
             }
         }
     }
+
+    // Section | Reclamos.html
+    
+    .main__section-nosotros {
+        background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
+        font-family: 'Jost', sans-serif;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 1px black;
+        margin: 15px 50px;
+        padding: 20px 30px;
+    
+        .main__content-section {
+    
+            p {
+                padding: 15px 10px;
+                font-size: min(5.8vw, 1.5rem);
+                text-align: center;
+            }
+            
+        }   
+    }
+
+
+    // Main | Nosotros.html 
+    .main-nosotros {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        margin: 20px 50px;
+
+        &__img {
+            background-image: url(../assets/images/menu.jpg);
+            background-size: cover;
+            background-position: top;
+            box-shadow: 0px 0px 20px 1px black;
+            border-radius: 20px;
+            height: 55vh;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        &__content {
+            position: absolute;
+            z-index: 10;
+            margin: 0px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Jost', sans-serif;
+
+            h1 {
+                font-size: min(10vw, 2.5rem);
+                color: white;
+                text-align: center;
+                text-shadow: 0px 0px 20px $blackshadow;
+                font-weight: 400;
+            }
+        }
+    }
+}
+// <------ * ------->  //

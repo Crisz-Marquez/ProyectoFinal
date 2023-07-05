@@ -10,7 +10,7 @@ body {
 
 // <------ * ------->  //
 
-// Main Index 
+// Main | Index.html 
 .main {
     position: relative;
     display: flex;
@@ -60,7 +60,7 @@ body {
 
 // <------ * ------->  //
 
-// Main Turnos 
+// Main | Turnos.html 
 .main-turnos {
     position: relative;
     display: flex;
@@ -113,22 +113,22 @@ body {
 
 // <------ * ------->  //
 
-// Main Nosotros 
-.main-nosotros{
+// Main | Nosotros.html 
+.main-nosotros {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 55vh;
     margin: 15px;
 
     &__img {
-        background-image: url(/assets/images/menu.jpg);
+        background-image: url(../assets/images/menu.jpg);
         background-size: cover;
         background-position: top;
         box-shadow: 0px 0px 20px 1px black;
         border-radius: 20px;
-        height: 100vh;
+        height: 55vh;
         width: 100%;
         position: absolute;
         z-index: 1;
@@ -138,6 +138,7 @@ body {
         position: absolute;
         z-index: 10;
         margin: 0px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -145,17 +146,11 @@ body {
         font-family: 'Jost', sans-serif;
 
         h1 {
-            font-size: min(3vw, 5vw);
+            font-size: min(10vw, 2.5rem);
             color: white;
+            text-align: center;
             text-shadow: 0px 0px 20px $blackshadow;
             font-weight: 400;
-        }
-        
-        h2 {
-            font-size: min(1.8vw, 4vw);
-            color: white;
-            text-shadow: 0px 0px 20px $blackshadow;
-            font-weight: 300;
         }
     }
 }
@@ -172,9 +167,7 @@ body {
     margin: 15px;
 
     &__img {
-        background-image: url(../assets/images/menu.jpg);
-        background-size: cover;
-        background-position: top;
+        background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
         box-shadow: 0px 0px 20px 1px black;
         opacity: 0.9;
         border-radius: 20px;

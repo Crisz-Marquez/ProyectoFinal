@@ -192,16 +192,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 55vh;
   margin: 15px;
 }
 .main-nosotros__img {
-  background-image: url(/assets/images/menu.jpg);
+  background-image: url(../assets/images/menu.jpg);
   background-size: cover;
   background-position: top;
   box-shadow: 0px 0px 20px 1px black;
   border-radius: 20px;
-  height: 100vh;
+  height: 55vh;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -210,6 +210,7 @@ body {
   position: absolute;
   z-index: 10;
   margin: 0px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,16 +218,11 @@ body {
   font-family: "Jost", sans-serif;
 }
 .main-nosotros__content h1 {
-  font-size: 3vw;
+  font-size: min(10vw, 2.5rem);
   color: white;
+  text-align: center;
   text-shadow: 0px 0px 20px black;
   font-weight: 400;
-}
-.main-nosotros__content h2 {
-  font-size: 1.8vw;
-  color: white;
-  text-shadow: 0px 0px 20px black;
-  font-weight: 300;
 }
 
 .main-reclamos {
@@ -238,9 +234,7 @@ body {
   margin: 15px;
 }
 .main-reclamos__img {
-  background-image: url(../assets/images/menu.jpg);
-  background-size: cover;
-  background-position: top;
+  background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
   box-shadow: 0px 0px 20px 1px black;
   opacity: 0.9;
   border-radius: 20px;
@@ -283,8 +277,6 @@ body {
 .main__section-AboutUs, .main__section-reliable, .main__section-inquiries {
   background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
   font-family: "Jost", sans-serif;
-  margin: 15px;
-  padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 1px black;
   position: relative;
@@ -298,6 +290,27 @@ body {
   font-size: min(5.3vw, 23px);
   font-weight: 300;
   padding: 0px 15px 0px 15px;
+}
+
+.main__section-nosotros {
+  background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
+  font-family: "Jost", sans-serif;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px black;
+  margin: 15px;
+  padding: 20px 30px;
+}
+.main__section-nosotros .main__content-section h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: min(9vw, 2.5rem);
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px black;
+}
+.main__section-nosotros .main__content-section p {
+  padding: 0px 10px;
+  font-size: min(5.8vw, 1.5rem);
+  text-align: center;
 }
 
 .main__article-sabias {
@@ -322,23 +335,21 @@ body {
 }
 
 .section__form {
-  margin: 0px 15px;
   width: 100%;
-  margin: 0px auto;
+  margin: 0px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .section__form .container-fluid {
-  margin: 0px auto;
-  padding: 0px;
   font-family: "Jost", sans-serif;
 }
 .section__form .container-fluid .form__person {
+  padding: 20px;
+  margin-top: 20px;
   background-image: linear-gradient(to bottom, #0096c3, #00aab6, #009797);
-  padding: 15px;
-  margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px 1px black;
 }
@@ -357,7 +368,7 @@ body {
   font-family: "Jost", sans-serif;
   text-align: center;
   text-shadow: 0px 0px 5px black;
-  padding: 20px 15px;
+  padding: 15px;
   margin: 0px;
 }
 .section__form .container-fluid .form__person .form-control {
@@ -374,10 +385,11 @@ body {
 }
 .section__form .container-fluid .form__product {
   background-image: linear-gradient(to bottom, #0096c3, #00aab6, #009797);
-  padding: 15px;
-  margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px 1px black;
+  padding: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 .section__form .container-fluid .form__product .form-label {
   font-size: min(5.9vw, 1.5rem);
@@ -394,7 +406,7 @@ body {
   font-family: "Jost", sans-serif;
   text-align: center;
   text-shadow: 0px 0px 5px black;
-  padding: 20px 15px;
+  padding: 15px;
   margin: 0px;
 }
 .section__form .container-fluid .form__product .form-control {
@@ -477,13 +489,14 @@ body {
   }
   .main-turnos {
     margin: 20px 50px;
-    height: 60vh;
+    height: 70vh;
   }
   .main-turnos__img {
-    height: 60vh;
+    height: 70vh;
   }
   .main-turnos__content h1 {
     font-size: 2.8rem;
+    text-shadow: 0px 0px 5px black;
   }
   .main-turnos__content h2 {
     font-size: 1.5rem;
@@ -491,12 +504,29 @@ body {
     margin-bottom: 0px;
     text-align: justify;
   }
+  .main-reclamos {
+    margin: 20px 50px;
+    height: 60vh;
+  }
+  .main-reclamos__img {
+    height: 60vh;
+  }
+  .main-reclamos__content h1 {
+    font-size: 2.8rem;
+    text-shadow: 0px 0px 5px black;
+  }
+  .main-reclamos__content h2 {
+    font-size: min(5.8vw, 1.5rem);
+    padding: 25px 50px;
+    margin-bottom: 0px;
+    text-align: justify;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
   .section__form {
-    margin: 0px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin: 0px;
+    padding: 0px 40px;
   }
   .section__form .container-fluid {
     margin: 0px;
@@ -504,7 +534,7 @@ body {
   .section__form .container-fluid .form__person {
     width: 100%;
     padding: 30px 80px 50px 80px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .section__form .container-fluid .form__product {
     width: 100%;
@@ -512,44 +542,56 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-}
-.main-reclamos {
-  margin: 20px 50px;
-  height: 60vh;
-}
-.main-reclamos__img {
-  height: 60vh;
-}
-.main-reclamos__content h1 {
-  font-size: 2.8rem;
-}
-.main-reclamos__content h2 {
-  font-size: 1.5rem;
-  padding: 25px 50px;
-  margin-bottom: 0px;
-  text-align: justify;
-}
-
-.section__form {
-  margin: 0px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.section__form .container-fluid {
-  margin: 0px;
-}
-.section__form .container-fluid .form__person {
-  width: 100%;
-  padding: 30px 80px 50px 80px;
-  margin-top: 30px;
-}
-.section__form .container-fluid .form__product {
-  width: 100%;
-  padding: 30px 80px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  .main__section-nosotros {
+    background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
+    font-family: "Jost", sans-serif;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px black;
+    margin: 15px 50px;
+    padding: 20px 30px;
+  }
+  .main__section-nosotros .main__content-section p {
+    padding: 15px 10px;
+    font-size: min(5.8vw, 1.5rem);
+    text-align: center;
+  }
+  .main-nosotros {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    margin: 20px 50px;
+  }
+  .main-nosotros__img {
+    background-image: url(../assets/images/menu.jpg);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0px 0px 20px 1px black;
+    border-radius: 20px;
+    height: 55vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .main-nosotros__content {
+    position: absolute;
+    z-index: 10;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+  }
+  .main-nosotros__content h1 {
+    font-size: min(10vw, 2.5rem);
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
