@@ -11,6 +11,7 @@ body {
 // <------ * ------->  //
 
 // Main | Index.html 
+
 .main {
     position: relative;
     display: flex;
@@ -18,7 +19,7 @@ body {
     align-items: center;
     height: 55vh;
     margin: 15px;
-
+    
     &__img {
         background-image: url(../assets/images/menu.jpg);
         background-size: cover;
@@ -87,6 +88,7 @@ body {
         z-index: 10;
         margin: 0px;
         padding: 10px;
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;

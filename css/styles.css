@@ -166,6 +166,7 @@ body {
   z-index: 10;
   margin: 0px;
   padding: 10px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,10 +275,12 @@ body {
   flex-direction: column;
 }
 
-.main__section-AboutUs, .main__section-reliable, .main__section-inquiries {
+.main__section-AboutUs {
   background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
   font-family: "Jost", sans-serif;
   border-radius: 20px;
+  margin: 15px;
+  padding: 20px;
   box-shadow: 0px 0px 20px 1px black;
   position: relative;
   z-index: 5;
@@ -286,7 +289,47 @@ body {
   align-items: center;
   text-align: center;
 }
-.main__section-AboutUs .main__content-AboutUs p, .main__section-AboutUs .main__content-reliable p, .main__section-AboutUs .main__content-inquiries p, .main__section-reliable .main__content-AboutUs p, .main__section-reliable .main__content-reliable p, .main__section-reliable .main__content-inquiries p, .main__section-inquiries .main__content-AboutUs p, .main__section-inquiries .main__content-reliable p, .main__section-inquiries .main__content-inquiries p {
+.main__section-AboutUs p {
+  font-size: min(5.3vw, 23px);
+  font-weight: 300;
+  padding: 0px 15px 0px 15px;
+}
+
+.main__section-reliable {
+  background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
+  font-family: "Jost", sans-serif;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 1px black;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main__section-reliable p {
+  font-size: min(5.3vw, 23px);
+  font-weight: 300;
+  padding: 0px 15px 0px 15px;
+}
+
+.main__section-inquiries {
+  background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
+  font-family: "Jost", sans-serif;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 1px black;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main__section-inquiries p {
   font-size: min(5.3vw, 23px);
   font-weight: 300;
   padding: 0px 15px 0px 15px;
@@ -317,8 +360,9 @@ body {
   background-image: linear-gradient(to bottom, #006dac, #0073ac, #0071b2);
   color: white;
   font-family: "Jost", sans-serif;
-  padding: 10px;
-  margin: 20px 0 20px 0;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
   box-shadow: 0px 0px 20px 1px black;
   position: relative;
   z-index: 5;

@@ -4,10 +4,12 @@
 }
 
 // Sections | Index.html
-.main__section-AboutUs, .main__section-reliable, .main__section-inquiries{
+@mixin sections {
     background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
     font-family: 'Jost', sans-serif;
     border-radius: 20px;
+    margin: 15px;
+    padding: 20px;
     box-shadow: 0px 0px 20px 1px black;
     position: relative;
     z-index: 5;
@@ -15,17 +17,26 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-
-    .main__content-AboutUs, .main__content-reliable, .main__content-inquiries {
         
-        p {
-            font-size: min(5.3vw, 23px);
-            font-weight: 300;
-            padding: 0px 15px 0px 15px;
-        }
+    p {
+        font-size: min(5.3vw, 23px);
+        font-weight: 300;
+        padding: 0px 15px 0px 15px;
     }
 }
+
+.main__section-AboutUs {
+    @include sections;
+}
+
+.main__section-reliable {
+    @include sections;
+}
+
+.main__section-inquiries {
+    @include sections;
+}
+
 
 // Section | Nosotros.html
 
