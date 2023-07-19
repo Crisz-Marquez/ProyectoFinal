@@ -1,4 +1,4 @@
-.main__article-sabias {
+@mixin articles {
     background-image: linear-gradient(to bottom, #006dac, #0073ac, #0071b2);
     color: white;
     font-family: 'Jost', sans-serif;
@@ -22,4 +22,13 @@
             margin-bottom: 10px;
         }
     }
+}
+
+.main__article-sabias {
+    @include articles;
+    
+}
+
+.main__article-sabias-1 {
+    @include articles;
 }

@@ -3,7 +3,8 @@
     flex-direction: column;
 }
 
-// Sections | Index.html
+// Inicio Sections | Index.html
+
 @mixin sections {
     background-image: linear-gradient(to bottom, #00c1fb, #00d1e0, #00d2d2);
     font-family: 'Jost', sans-serif;
@@ -27,16 +28,20 @@
 
 .main__section-AboutUs {
     @include sections;
+    grid-area: AboutUs
 }
 
 .main__section-reliable {
     @include sections;
+    grid-area: reliable
 }
 
 .main__section-inquiries {
     @include sections;
+    grid-area: inquiries
 }
 
+// Fin Section | Index.html
 
 // Section | Nosotros.html
 
@@ -63,7 +68,6 @@
             font-size: min(5.8vw, 1.5rem);
             text-align: center;
         }
-        
     }   
 }
 

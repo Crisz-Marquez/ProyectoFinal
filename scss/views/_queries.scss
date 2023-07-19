@@ -2,7 +2,7 @@
    
     // INICIO | INDEX.HTML
 
-    // NavBar | Index.html
+    // Inicio NavBar | Index.html
     .header {
 
         .nav__container {
@@ -20,8 +20,9 @@
             }
         }
     }
-   
-    // Main | Index.html
+    // Fin NavBar | Index.html
+
+    // Inicio Main | Index.html
     .main  {
         margin: 20px 50px;
 
@@ -36,11 +37,18 @@
             }
         }
     }
+    // Fin Main | Index.html 
 
-    // Sections | Index.html
-    .main__section-AboutUs, .main__section-reliable, .main__section-inquiries{
+    // Inicio Sections | Index.html
+    .main__content-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    @mixin sections-queries {
         margin: 20px 50px;
-    
+
         .main__content-AboutUs, .main__content-reliable, .main__content-inquiries {
 
             p {
@@ -48,18 +56,32 @@
                 padding: 25px 45px;
                 text-align: justify;
                 margin: 0px;
-                }
+            }
         }
     }
 
-    // Articles | Index.html
-    .main__article-sabias {
+    .main__section-AboutUs {
+        @include sections-queries;
+    }
+
+    .main__section-reliable {
+        @include sections-queries;
+    } 
+
+    .main__section-inquiries {
+        @include sections-queries;
+    }
+    // Fin Sections | Index.html
+
+    // Incio Articles | Index.html
+    @mixin articles-queries {
         background-image: linear-gradient(to bottom, #004974, #00476b, #00466e);
         color: rgb(255, 255, 255);
         font-family: 'Jost', sans-serif;
         padding: 20px;
         margin: 20px 50px;
         border-radius: 20px;
+        grid-area: sabias;
 
         .main__content-sabias{
     
@@ -72,6 +94,14 @@
             }
         }
     }
+    .main__article-sabias {
+        @include articles-queries;
+    }
+
+    .main__article-sabias-1 {
+        @include articles-queries;
+    }
+    // Fin Articles | Index.html
     
     // FIN | INDEX.HTML
 
@@ -98,10 +128,10 @@
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: max(1.3vw, 1.2rem);
                 padding: 25px 50px;
                 margin-bottom: 0px;
-                text-align: justify;
+                text-align: center;
             }
         }
     }
@@ -143,7 +173,7 @@
         }
     }
 
-    //  Form | Reclamos.html
+    //  Inicio Form | Reclamos.html
     .section__form {
         margin: 0px;
         padding: 0px 40px;
@@ -165,6 +195,7 @@
             }
         }
     }
+    //  Fin Form | Reclamos.html
 
     // Section | Reclamos.html
     
@@ -226,6 +257,112 @@
                 text-align: center;
                 text-shadow: 0px 0px 20px $blackshadow;
                 font-weight: 400;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    // Inicio Sections | Index.html
+    .main__content-section {
+        display: grid;
+        grid-template: 
+        "AboutUs AboutUs sabias"
+        "sabias-1 reliable sabias"
+        "sabias-1 inquiries inquiries";
+        grid-template-rows: 40vh 40vh 40vh;
+        grid-template-columns: 25vw auto 25vw;
+    }
+
+    @mixin sections-queries {
+        margin: 20px 50px;
+
+        .main__content-AboutUs, .main__content-reliable, .main__content-inquiries {
+
+            p {
+                font-size: max(1.4vw, 1.2rem);
+                padding: 25px 45px;
+                text-align: justify;
+                color: black;
+                margin: 0px;
+                text-shadow: 0px 0px px black
+            }
+        }
+    }
+
+    .main__section-AboutUs {
+        @include sections-queries;
+        grid-area: AboutUs;
+        margin: 20px 20px 20px 50px;
+    }
+
+    .main__section-reliable {
+        @include sections-queries;
+        grid-area: reliable;
+        margin: 20px 
+    } 
+
+    .main__section-inquiries {
+        @include sections-queries;
+        grid-area: inquiries;
+        margin: 20px 50px 20px 20px;
+    }
+    // Fin Sections | Index.html
+
+    // Incio Articles | Index.html
+    @mixin articles-queries {
+        background-image: linear-gradient(to bottom, #004974, #00476b, #00466e);
+        color: rgb(255, 255, 255);
+        font-family: 'Jost', sans-serif;
+        padding: 20px;
+        margin: 20px 50px;
+        border-radius: 20px;
+
+        .main__content-sabias{
+    
+            p {
+                font-size: max(1.3vw, 0.9rem);
+                font-weight: 300;
+                padding: 25px 25px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+        }
+    }
+
+    .main__article-sabias {
+        @include articles-queries;
+        grid-area: sabias;
+        margin: 20px 0px;
+        margin-right: 50px
+    }
+
+    .main__article-sabias-1 {
+        @include articles-queries;
+        grid-area: sabias-1;
+        margin: 20px 0px;
+        margin-left: 50px;
+    }
+    // Fin Articles | Index.html
+
+    .section__form {
+        margin: 50px 0px;
+
+        .container-fluid {
+            display: flex;
+            justify-content: space-between;
+
+            .form__person {
+                width: 48%;
+                margin: 0px;
+                padding: 50px;
+            }
+
+            .form__product {
+                width: 48%;
+                margin: 0px;
+                padding: 50px;
             }
         }
     }

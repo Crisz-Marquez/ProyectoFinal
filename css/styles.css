@@ -288,6 +288,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  grid-area: AboutUs;
 }
 .main__section-AboutUs p {
   font-size: min(5.3vw, 23px);
@@ -308,6 +309,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  grid-area: reliable;
 }
 .main__section-reliable p {
   font-size: min(5.3vw, 23px);
@@ -328,6 +330,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  grid-area: inquiries;
 }
 .main__section-inquiries p {
   font-size: min(5.3vw, 23px);
@@ -372,6 +375,28 @@ body {
   text-align: center;
 }
 .main__article-sabias .main__content-sabias p {
+  font-size: min(5.3vw, 23px);
+  font-weight: 300;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
+}
+
+.main__article-sabias-1 {
+  background-image: linear-gradient(to bottom, #006dac, #0073ac, #0071b2);
+  color: white;
+  font-family: "Jost", sans-serif;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px black;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main__article-sabias-1 .main__content-sabias p {
   font-size: min(5.3vw, 23px);
   font-weight: 300;
   padding: 0px 10px 0px 10px;
@@ -507,10 +532,32 @@ body {
   .main__content h2 {
     font-size: 1.5rem;
   }
-  .main__section-AboutUs, .main__section-reliable, .main__section-inquiries {
+  .main__content-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__section-AboutUs {
     margin: 20px 50px;
   }
-  .main__section-AboutUs .main__content-AboutUs p, .main__section-AboutUs .main__content-reliable p, .main__section-AboutUs .main__content-inquiries p, .main__section-reliable .main__content-AboutUs p, .main__section-reliable .main__content-reliable p, .main__section-reliable .main__content-inquiries p, .main__section-inquiries .main__content-AboutUs p, .main__section-inquiries .main__content-reliable p, .main__section-inquiries .main__content-inquiries p {
+  .main__section-AboutUs .main__content-AboutUs p, .main__section-AboutUs .main__content-reliable p, .main__section-AboutUs .main__content-inquiries p {
+    font-size: 1.4rem;
+    padding: 25px 45px;
+    text-align: justify;
+    margin: 0px;
+  }
+  .main__section-reliable {
+    margin: 20px 50px;
+  }
+  .main__section-reliable .main__content-AboutUs p, .main__section-reliable .main__content-reliable p, .main__section-reliable .main__content-inquiries p {
+    font-size: 1.4rem;
+    padding: 25px 45px;
+    text-align: justify;
+    margin: 0px;
+  }
+  .main__section-inquiries {
+    margin: 20px 50px;
+  }
+  .main__section-inquiries .main__content-AboutUs p, .main__section-inquiries .main__content-reliable p, .main__section-inquiries .main__content-inquiries p {
     font-size: 1.4rem;
     padding: 25px 45px;
     text-align: justify;
@@ -523,8 +570,25 @@ body {
     padding: 20px;
     margin: 20px 50px;
     border-radius: 20px;
+    grid-area: sabias;
   }
   .main__article-sabias .main__content-sabias p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 25px 45px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .main__article-sabias-1 {
+    background-image: linear-gradient(to bottom, #004974, #00476b, #00466e);
+    color: rgb(255, 255, 255);
+    font-family: "Jost", sans-serif;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+    grid-area: sabias;
+  }
+  .main__article-sabias-1 .main__content-sabias p {
     font-size: 1.4rem;
     font-weight: 300;
     padding: 25px 45px;
@@ -543,10 +607,10 @@ body {
     text-shadow: 0px 0px 5px black;
   }
   .main-turnos__content h2 {
-    font-size: 1.5rem;
+    font-size: max(1.3vw, 1.2rem);
     padding: 25px 50px;
     margin-bottom: 0px;
-    text-align: justify;
+    text-align: center;
   }
   .main-reclamos {
     margin: 20px 50px;
@@ -635,6 +699,106 @@ body {
     text-align: center;
     text-shadow: 0px 0px 20px black;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__content-section {
+    display: grid;
+    grid-template: "AboutUs AboutUs sabias" "sabias-1 reliable sabias" "sabias-1 inquiries inquiries";
+    grid-template-rows: 40vh 40vh 40vh;
+    grid-template-columns: 25vw auto 25vw;
+  }
+  .main__section-AboutUs {
+    margin: 20px 50px;
+    grid-area: AboutUs;
+    margin: 20px 20px 20px 50px;
+  }
+  .main__section-AboutUs .main__content-AboutUs p, .main__section-AboutUs .main__content-reliable p, .main__section-AboutUs .main__content-inquiries p {
+    font-size: max(1.4vw, 1.2rem);
+    padding: 25px 45px;
+    text-align: justify;
+    color: black;
+    margin: 0px;
+    text-shadow: 0px 0px px black;
+  }
+  .main__section-reliable {
+    margin: 20px 50px;
+    grid-area: reliable;
+    margin: 20px;
+  }
+  .main__section-reliable .main__content-AboutUs p, .main__section-reliable .main__content-reliable p, .main__section-reliable .main__content-inquiries p {
+    font-size: max(1.4vw, 1.2rem);
+    padding: 25px 45px;
+    text-align: justify;
+    color: black;
+    margin: 0px;
+    text-shadow: 0px 0px px black;
+  }
+  .main__section-inquiries {
+    margin: 20px 50px;
+    grid-area: inquiries;
+    margin: 20px 50px 20px 20px;
+  }
+  .main__section-inquiries .main__content-AboutUs p, .main__section-inquiries .main__content-reliable p, .main__section-inquiries .main__content-inquiries p {
+    font-size: max(1.4vw, 1.2rem);
+    padding: 25px 45px;
+    text-align: justify;
+    color: black;
+    margin: 0px;
+    text-shadow: 0px 0px px black;
+  }
+  .main__article-sabias {
+    background-image: linear-gradient(to bottom, #004974, #00476b, #00466e);
+    color: rgb(255, 255, 255);
+    font-family: "Jost", sans-serif;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+    grid-area: sabias;
+    margin: 20px 0px;
+    margin-right: 50px;
+  }
+  .main__article-sabias .main__content-sabias p {
+    font-size: max(1.3vw, 0.9rem);
+    font-weight: 300;
+    padding: 25px 25px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .main__article-sabias-1 {
+    background-image: linear-gradient(to bottom, #004974, #00476b, #00466e);
+    color: rgb(255, 255, 255);
+    font-family: "Jost", sans-serif;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+    grid-area: sabias-1;
+    margin: 20px 0px;
+    margin-left: 50px;
+  }
+  .main__article-sabias-1 .main__content-sabias p {
+    font-size: max(1.3vw, 0.9rem);
+    font-weight: 300;
+    padding: 25px 25px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .section__form {
+    margin: 50px 0px;
+  }
+  .section__form .container-fluid {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__form .container-fluid .form__person {
+    width: 48%;
+    margin: 0px;
+    padding: 50px;
+  }
+  .section__form .container-fluid .form__product {
+    width: 48%;
+    margin: 0px;
+    padding: 50px;
   }
 }
 
